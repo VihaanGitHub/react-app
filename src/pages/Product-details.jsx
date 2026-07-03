@@ -12,6 +12,57 @@ export default function ProductDetails(){
     
     return (
    
-    <div></div>
-    )
+    <div>
+        <div style={{
+        backgroundColor: "lightGray",
+        width: "500px",
+        height: "900px",
+        marginLeft: "30vw",
+        textAlign: "center",
+        fontSize: "30px",
+        fontWeight: "bold",
+        borderRadius: "10px",
+    }}><p>{currentProduct.title}</p><img style={{
+        height: "300px",
+        borderRadius: "5px",
+    }} src={currentProduct.image} />
+    <p>{currentProduct.category}</p>
+    <div style={{
+        backgroundColor: "rgba(0, 0, 0, 0.15)",
+    }}>
+    <p style={{
+        fontWeight: "normal",
+        fontSize: "25px",
+    }}>{currentProduct.description}</p>
+    </div>
+    <div style={{
+       backgroundColor: "rgba(0, 255, 0, 0.15)",
+    }}>
+    <p style={{
+        textAlign: "left",
+        color: "green",
+        marginLeft: "20px",
+        textDecoration: "line-through",
+        marginBottom: "5px",
+    }}>₹{currentProduct.mrp}</p>
+    <p style={{
+        textAlign: "left",
+        color: "green",
+        marginTop: "5px",
+        marginLeft: "20px",
+        marginBottom: "5px",
+    }}>₹{currentProduct.price}</p>
+    <p style={{
+        textAlign: "left",
+        color: "darkGreen",
+        marginLeft: "20px",
+        marginTop: "0px",
+    }}
+        >{currentProduct.discount}% off!</p>
+        </div>
+        <p>{currentProduct.rating} Stars, {currentProduct.reviewsCount} Reviews</p>
+        {/* <p>{currentProduct.shippingInfo}</p> doesnt work?*/}
+    </div>
+    </div>
+    );
 }
