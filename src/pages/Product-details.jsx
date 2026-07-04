@@ -15,8 +15,8 @@ export default function ProductDetails(){
     <div>
         <div style={{
         backgroundColor: "lightGray",
-        width: "500px",
-        height: "900px",
+        width: "1000px",
+        height: "600px",
         marginLeft: "30vw",
         textAlign: "center",
         fontSize: "30px",
@@ -61,7 +61,7 @@ export default function ProductDetails(){
         >{currentProduct.discount}% off!</p>
         </div>
         <p>{currentProduct.rating} Stars, {currentProduct.reviewsCount} Reviews</p>
-        {/* <p>{currentProduct.shippingInfo}</p> doesnt work?*/}
+        <p>{currentProduct.shippingInfo.estimatedDelivery}</p>
     </div>
     </div>
     );

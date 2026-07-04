@@ -10,6 +10,9 @@ import Home from './pages/Home'
 import About  from './pages/About'
 import ProductsPage from './pages/ProductPage';
 import ProductDetails from './pages/Product-details'
+import Form from './pages/form';
+import FocusInput from './pages/form2';
+import Effect from './pages/effect';
 
 const router = createBrowserRouter([
   {
@@ -23,6 +26,18 @@ const router = createBrowserRouter([
   {
     path:"/products/:page",
     element:<ProductsPage/>
+  },
+  {
+    path:"/form",
+    element:<Form/>
+  },
+   {
+    path:"/effect",
+    element:<Effect/>
+  },
+   {
+    path:"/form2",
+    element:<FocusInput/>
   },
   {
     path:"/product-details/:id",
