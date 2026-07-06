@@ -13,11 +13,12 @@ import ProductDetails from './pages/Product-details'
 import Form from './pages/form';
 import FocusInput from './pages/form2';
 import Effect from './pages/effect';
+import Tailwind from './pages/tailwind';
 
 const router = createBrowserRouter([
   {
     path:"/",
-    element:<Home/>
+    element:<Tailwind/>
   },
   {
     path:"/about",
